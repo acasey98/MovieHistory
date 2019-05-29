@@ -4,6 +4,7 @@ import 'firebase/auth';
 const authDiv = document.getElementById('auth');
 const authNavbar = document.getElementById('navbar-button-auth');
 const logoutNavbar = document.getElementById('navbar-button-logout');
+const moviesNavbar = document.getElementById('navbar-button-movies');
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
@@ -11,10 +12,12 @@ const checkLoginStatus = () => {
       authDiv.classList.add('hide');
       authNavbar.classList.add('hide');
       logoutNavbar.classList.remove('hide');
+      moviesNavbar.classList.remove('hide');
     } else {
       authDiv.classList.remove('hide');
       authNavbar.classList.remove('hide');
       logoutNavbar.classList.add('hide');
+      moviesNavbar.classList.add('hide');
     }
   });
 };
