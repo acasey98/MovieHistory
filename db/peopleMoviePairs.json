@@ -1,3 +1,7 @@
 {
-  
+  "personMoviePair1": {
+    "personId": "person1",
+    "movieId": "movie1",
+    "roleId": "role1"
+  }
 }
