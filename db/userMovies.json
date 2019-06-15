@@ -1,0 +1,8 @@
+{
+  "usermovie1": {
+    "userId": "user1",
+    "movieId": "movie1",
+    "hasWatched":false,
+    "starRating":5
+  }
+}
